@@ -1,4 +1,3 @@
-
 type Input = {
   space: number[];
   segmentsNumber: number;

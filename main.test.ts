@@ -6,7 +6,7 @@ describe("Test hard disk analysis", () => {
     const segmentsNumber = 3;
     const result = 4;
 
-    expect(getBiggerValue({space, segmentsNumber })).toBe(result);
+    expect(getBiggerValue({ space, segmentsNumber })).toBe(result);
   });
 
   test("Case 2", () => {
@@ -14,12 +14,14 @@ describe("Test hard disk analysis", () => {
     const segmentsNumber = 1;
     const result = 3;
 
-    expect(getBiggerValue({space, segmentsNumber })).toBe(result);  });
+    expect(getBiggerValue({ space, segmentsNumber })).toBe(result);
+  });
 
   test("Case 3", () => {
     const space = [8, 2, 4];
     const segmentsNumber = 2;
     const result = 2;
 
-    expect(getBiggerValue({space, segmentsNumber })).toBe(result);  });
+    expect(getBiggerValue({ space, segmentsNumber })).toBe(result);
+  });
 });

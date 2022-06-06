@@ -5,10 +5,10 @@ type Input = {
 
 export const getBiggerValue = ({ space, segmentsNumber }: Input) => {
   let minValues: number[] = [];
-  let segments = segmentsNumber;
+  let invervalEnd = segmentsNumber;
 
-  for (let position = 0; position < space.length; position++) {
-    if (segments <= space.length) minValues = [...minValues, Math.min(...space.slice(position, segments++))];
+  for (let intervalBegin = 0; intervalBegin < space.length; intervalBegin++) {
+    if (invervalEnd <= space.length) minValues = [...minValues, Math.min(...space.slice(intervalBegin, invervalEnd++))];
   }
 
   return Math.max(...minValues);
